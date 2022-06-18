@@ -176,12 +176,15 @@ function createPhonebook(namesArray, numbersArray) {
 
     let phonebook = {}; // empty array to insert names with number values from the loop
     for (let i = 0; i < namesArray.length; i++) {
-        phonebook[namesArray[i]] = numbersArray[i];
+        phonebook[namesArray[i]] = numbersArray[i]; // giving indexes from namesArray the value of corresponding numbersArray
     }
     //console.log(namesArray[1]) me messing around to see it working
     return phonebook;
 
 }
+
+
+
                                 //   [0]      [1]      [2]
 let phonebook1 = createPhonebook(['Jimothy', 'Maria', 'Karl'], ['1234567890',
 //                                 the names = namesArray          the numbers = numbersArray          
